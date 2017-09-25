@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="address"/>
+	<EditText android:id="@+id/addr_edit"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:hint=""/>
+
+	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="comment"/>
+	<EditText android:id="@+id/msg_edit"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:hint=""/>
+
+	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="longitude"/>
+	<EditText android:id="@+id/lon_edit"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:hint=""/>
+
+	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="latitude"/>
+	<EditText android:id="@+id/lat_edit"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:hint=""/>
+
+	<Button android:id ="@+id/save"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Save"/>
+	<Button android:id ="@+id/drive"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Navigate"/>
+	<TextView android:id="@+id/result"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:hint="status"/>
+	<Button android:id ="@+id/delete"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="delete"/>
+</LinearLayout>

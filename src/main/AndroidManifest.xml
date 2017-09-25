@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.android.nav"
+	android:versionCode="1"
+	android:versionName="1.0">
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.CAMERA"/>
+
+	<uses-sdk android:minSdkVersion="15"
+		android:targetSdkVersion = "25"/>
+	<application android:label="@string/app_name" 
+		android:theme="@style/AppTheme"
+		android:icon="@drawable/ic_launcher">
+
+		<activity
+			android:name="loginActivity"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name="mainActivity"
+			android:label="@string/app_name"
+			android:parentActivityName=".loginActivity" >
+		</activity>
+
+		<activity android:name="extractActivity"
+			android:label="@string/app_name">
+		</activity>
+
+		<activity android:name="editActivity"
+			android:label="@string/app_name">
+		</activity>
+
+		<provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+	</application>
+</manifest>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	<TextView
+		android:id="@+id/hello"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Hello World, mainActivity" />
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+
+		<Button android:id ="@+id/button_reset"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/button_reset"/>
+
+		<Button android:id ="@+id/logoff"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="logoff"/>
+	</LinearLayout>
+
+	<ListView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/list_view"
+		/>
+	<!-- database table. obsolete -->
+	<ListView
+		android:layout_width="match_parent"
+		android:visibility="gone"
+		android:layout_height="wrap_content"
+		android:id="@+id/sql_list_view" />
+
+	<EditText android:id="@+id/input"
+		android:visibility="gone"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:hint="@string/edit_message"/>
+
+	<Button android:id ="@+id/button1"
+		android:visibility="gone"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/button_txt"/>
+	<!-- end of obsolete items -->
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+		<Button android:id ="@+id/camera"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/button_camera"/>
+
+		<TextView
+			android:id="@+id/howto"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="8dp"
+			android:text="Enter string below or Use the camera button to capture the address paper."/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+		<Button android:id ="@+id/scrub"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="validate"/>
+		<Button android:id ="@+id/drive"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="navigate"/>
+		<Button android:id ="@+id/insert"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="save"/>
+	</LinearLayout>
+	<EditText 
+		android:id="@+id/result"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minLines="4"
+		android:textSize="16sp"
+		android:padding="10dp"
+		android:background="@drawable/edit_text"
+		android:hint="Enter address string"/>
+</LinearLayout>
+<!--
+		android:text="result"/>
+		android:inputType="textCapSentences|textMultiLine"
+	 -->
