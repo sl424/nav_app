@@ -8,9 +8,7 @@ the address. The app also has
 a REST API backend to help store and retrive data by the authorized user. OAuth
 is supported by Firebase using email and password.
 
-![home](./home.png "home")
-![raw](./raw.png "raw")
-![scrubbed](./scrubbed.png "scrubbed")
+![combo](./combo.png "combo")
 
 # Components
 ##Firebase Authentication
