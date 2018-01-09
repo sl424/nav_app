@@ -19,11 +19,13 @@ Firebase that the token is valid and process the request.
 ##Google Cloud Vision API
 Specifically the Text Detection is used to extract text from photo taken by the
 camera.
+'''
 	POST https://vision.googleapis.com/v1/images:annotate?key=YOUR_API_KEY
 
 ##SmartyStreets API
 The standardized address is not a regular language or context-free, I used the API
 from SmartyStreets for parsing the text return by the Text Detection.
+'''
 	POST https://us-extract.api.smartystreets.com\?auth-id=123\&auth-token=abc
 
 ##Backend REST APIs
